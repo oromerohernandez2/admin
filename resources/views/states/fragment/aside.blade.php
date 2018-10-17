@@ -1,3 +1,3 @@
 <p class="alert alert-info">
-    Desde aqui podemos crear, eliminar, listar y editar los estados.
+    Desde aqui podemos ver los estados
 </p>

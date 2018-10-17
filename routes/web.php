@@ -18,3 +18,11 @@ Route::get('/', function () {
 Route::resource('states','StateController');
 
 Route::resource('status','StatusController');
+
+Route::resource('localities','LocalitieController');
+
+Route::resource('municipalities','MunicipController');
+
+Route::resource('roles','RoleController');
+
+Route::resource('persons','PersonController');

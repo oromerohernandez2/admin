@@ -19,7 +19,6 @@ class StatusController extends Controller
 
     public function store(StatusRequest $request){
         $statu = new X_status;
-        $statu->xxx_stas_id = $request->xxx_stas_id;
         $statu->xx_stas_name = $request->xx_stas_name;
         $statu->xx_stas_description = $request->xx_stas_description;
         $statu->save();
@@ -28,7 +27,6 @@ class StatusController extends Controller
 
     public function update(StatusRequest $request, $id){
         $statu = X_status::find($id);
-        $statu->xxx_stas_id = $request->xxx_stas_id;
         $statu->xx_stas_name = $request->xx_stas_name;
         $statu->xx_stas_description = $request->xx_stas_description;
         $statu->save();

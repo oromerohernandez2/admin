@@ -27,7 +27,7 @@
           Usuarios
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="">Empleados</a>
+          <a class="dropdown-item" href="{{route('persons.index')}}">Empleados</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="">Usuarios del sistema</a>
         </div>
@@ -40,6 +40,9 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="{{route('states.index')}}">Estados</a>
           <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="{{route('municipalities.index')}}">Municipios</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="{{route('localities.index')}}">Localidades</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -47,10 +50,11 @@
           Configuracion
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{{route('status.index')}}">Estatus</a>
+          <a class="dropdown-item" href="{{route('roles.index')}}">Roles</a>
           <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="{{route('status.index')}}">Estatus</a>
         </div>
-      </li>1
+      </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
