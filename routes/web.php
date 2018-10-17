@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('states','StateController');
+
+Route::resource('status','StatusController');
